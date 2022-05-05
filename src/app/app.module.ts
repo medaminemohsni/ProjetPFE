@@ -16,11 +16,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TrainerhomeModule } from './Courzelo_Classroom/Courzelo_Classroom_Trainer/Courzelo_Classroom_Trainer_layouts/Trainerhome/trainerhome.module';
 import { FormsModule } from '@angular/forms';
 import { ConfirmEmailComponent } from './Courzelo_Core/Modules/confirm-email/confirm-email.component';
+import { CalenderComponent } from './Courzelo_Classroom/Courzelo_Classroom_Trainee/Module/calender/calender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConfirmEmailComponent,
+    CalenderComponent,
     
   ],
   imports: [

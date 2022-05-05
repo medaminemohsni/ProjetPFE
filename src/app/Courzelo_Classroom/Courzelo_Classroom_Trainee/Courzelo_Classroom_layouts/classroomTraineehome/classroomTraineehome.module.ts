@@ -20,7 +20,8 @@ import { ClassroomTraineehomeComponent } from './classroomTraineehome.component'
 import { ClassroomhomeComponentRoutingModule } from './classroomTraineehome-routing.module';
 import { BrowserModule } from '@angular/platform-browser'
 import { ArchivedcoursesComponent } from '../../Module/archivedcourses/archivedcourses.component';
-
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,10 @@ import { ArchivedcoursesComponent } from '../../Module/archivedcourses/archivedc
   ],
   imports: [
     CommonModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
     ClassroomhomeComponentRoutingModule,
     SharedClassroomTraineeModule,
     MatToolbarModule,
